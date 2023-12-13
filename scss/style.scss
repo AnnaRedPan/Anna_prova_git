@@ -1,0 +1,75 @@
+$color1: rgb(5, 95, 105);
+$color2: rgb(0, 229, 255);
+//$color3:darken($color2,30%);
+$color3: darken($color2, 30%);
+$font-size-base: 1em;
+$font-size-big: $font-size-base*3;
+$md-multiplier: 1.7;
+$lg-multiplier: 2.4;
+$font-family: 'Playfair Display',sans-serif;
+$font-family1: 'Playfair Display',sans-serif;
+$font-family2:'Abril Fatface', sans-serif;
+body {
+    background-color: rgb(104, 180, 158);
+    font-family: $font-family;
+    font-size: $font-size-base;
+    color: $color1
+}
+
+
+h1 {
+    color: rgb(0, 206, 229);
+    font-size: $font-size-big;
+    font-family:$font-family2 ;
+    text-transform: uppercase;
+    text-shadow:
+        10px 10px 0 rgb(0, 67, 75)
+        2.5px -2.5px 0 rgb(0, 67, 75),
+        2.5px -2.5px 0 rgb(0,67,75)
+        -2.5px 2.5px 0 rgb(0,67,75),
+        2.5px 2.5px 0 rgb(0, 67, 75);
+    letter-spacing: 7px;
+    line-height: 20px;
+    white-space: nowrap;
+    border: 3px solid rgb(0,206,229);
+    border-radius: 15px;
+    padding: 40px 20px;
+}
+
+@media screen and (min-width: 720px) {
+    .title {
+        font-size: $font-size-big*$md-multiplier
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        font-size: $font-size-big*$lg-multiplier
+    }
+}
+
+.collegamento {
+    padding: 20px 35px;
+    color: $color3;
+}
+
+.collegamento:hover {
+    color: $color2;
+}
+
+.Titolo {
+    padding: 10px 35px;
+    font-family: $font-family1;
+    position: center;
+    color: $color3;
+}
+ #banner {
+    background-image: url('../img/gridotto.jpg');
+     background-size: cover;
+     background-position: bottom center;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     ;
+ }
